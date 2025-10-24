@@ -24,7 +24,7 @@ const StudentDashboard = () => {
             <h1 className="text-3xl font-bold text-[#951B1C] mb-6">👨‍🎓 Student Dashboard</h1>
 
             {/* Features as Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 mb-8">
                 {features.map((feature) => (
                     <NavLink
                         key={feature.path}

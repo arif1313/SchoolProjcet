@@ -34,6 +34,12 @@ import PrintReportCard from './Component/Results/PrintReportCard.jsx';
 import TopStudents from './Component/Results/TopStudents.jsx';
 import ExportResult from './Component/Results/ExportResult.jsx';
 import Payment from './Component/Payment/Payment.jsx';
+import ManagementDashboard from './Component/Management/ManagementDashboard.jsx';
+import OverviewStats from './Component/Management/OverviewStats.jsx';
+import ShiftManagement from './Component/Management/ShiftManagement.jsx';
+import FinanceManagement from './Component/Management/FinanceManagement.jsx';
+import UserRoles from './Component/Management/UserRoles.jsx';
+import AcademicYearSetup from './Component/Management/AcademicYearSetup.jsx';
 
 
 const router = createBrowserRouter([
@@ -90,6 +96,15 @@ const router = createBrowserRouter([
         element: <Payment />,
 
       },
+      {
+        path: "/management", element: <ManagementDashboard />, children: [
+          { path: "overview", element: <OverviewStats /> },
+          { path: "shift", element: <ShiftManagement /> },
+          { path: "finance", element: <FinanceManagement /> },
+          { path: "roles", element: <UserRoles /> },
+          { path: "academic-year", element: <AcademicYearSetup /> },
+        ]
+      }
 
 
     ]

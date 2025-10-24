@@ -7,6 +7,7 @@ import {
     FaChartBar,
     FaSignOutAlt,
     FaClipboardList,
+
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import schoolLogo from "../../../public/LilyLogo.png";
@@ -19,6 +20,7 @@ const SidebarSchool = () => {
         { path: "/students", label: "Students", icon: <FaUserGraduate /> },
         { path: "/Payment", label: "Payments", icon: <FaMoneyBillWave /> },
         { path: "/result", label: "Result", icon: <FaClipboardList /> },
+
 
     ];
 
